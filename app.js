@@ -167,13 +167,13 @@ function setTipe(tipe) {
 function showBudgetQuestion() {
     document.getElementById("question").innerHTML = 'Harga?'
     document.getElementById("option-container").innerHTML =
-        `<div onclick="setBudget('murah');" class="option" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('/assets/img/cheap.png')">
+        `<div onclick="setBudget('murah');" class="option" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('/makan-apa-hari-ini/assets/img/cheap.png')">
         <h2 class="option-text">Murah</h2>
     </div>
-    <div onclick="setBudget('medium');" class="option" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/img/medium.jpg')">
+    <div onclick="setBudget('medium');" class="option" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/makan-apa-hari-ini/assets/img/medium.jpg')">
         <h2 class="option-text">Medium</h2>
     </div>
-    <div onclick="setBudget('mahal');" class="option" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/img/expensive.jpg')">
+    <div onclick="setBudget('mahal');" class="option" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/makan-apa-hari-ini/assets/img/expensive.jpg')">
         <h2 class="option-text">Mahal</h2>
     </div>`
 }
@@ -181,13 +181,13 @@ function showBudgetQuestion() {
 function showJenisQuestion() {
     document.getElementById("question").innerHTML = 'Jenis Makanan?'
     document.getElementById("option-container").innerHTML =
-        `<div onclick="setJenis('tradisional');" class="option" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('/assets/img/traditional.jpg')">
+        `<div onclick="setJenis('tradisional');" class="option" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('/makan-apa-hari-ini/assets/img/traditional.jpg')">
         <h2 class="option-text">Tradisional</h2>
     </div>
-    <div onclick="setJenis('asian');" class="option" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/img/asian.jpeg')">
+    <div onclick="setJenis('asian');" class="option" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/makan-apa-hari-ini/assets/img/asian.jpeg')">
         <h2 class="option-text">Asian</h2>
     </div>
-    <div onclick="setJenis('western');" class="option" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/img/western.jpeg')">
+    <div onclick="setJenis('western');" class="option" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/makan-apa-hari-ini/assets/img/western.jpeg')">
         <h2 class="option-text">Western</h2>
     </div>`
 }
@@ -195,10 +195,10 @@ function showJenisQuestion() {
 function showTipeQuestion() {
     document.getElementById("question").innerHTML = 'Kuah atau Kering?'
     document.getElementById("option-container").innerHTML =
-        `<div onclick="setTipe('kuah');" class="option" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('/assets/img/wetfood.jpeg')">
+        `<div onclick="setTipe('kuah');" class="option" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('/makan-apa-hari-ini/assets/img/wetfood.jpeg')">
         <h2 class="option-text">Kuah</h2>
     </div>
-    <div onclick="setTipe('kering');" class="option" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/img/dryfood.jpeg')">
+    <div onclick="setTipe('kering');" class="option" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/makan-apa-hari-ini/assets/img/dryfood.jpeg')">
         <h2 class="option-text">Kering</h2>
     </div>`
 }
