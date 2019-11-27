@@ -204,17 +204,22 @@ function showTipeQuestion() {
 }
 
 function getResult() {
-    result = FoodDB.filter(food => {
-        return food.info.budget == input.budget &&
-            food.info.jenis == input.jenis &&
-            food.info.tipe == input.tipe
-    }).map(x => x.nama)
-
+    for(var x = 0; x < FoodDB.length;x++){
+        if(input.budget == FoodDB[x].info.budget){
+            if(input.jenis == FoodDB[x].info.jenis){
+                if(input.tipe == FoodDB[x].info.tipe){
+                    result.push(FoodDB[x].nama)
+                }
+            }
+        }
+    }
+    
     if (result.length == 0) {
         document.getElementById("question").innerHTML = 'Sayang sekali kami tidak dapat menemukan makananmu :('
     } else {
         document.getElementById("question").innerHTML = `Makananmu hari ini adalah: </br>${result}`
     }
+    
     document.getElementById("option-container").innerHTML = ''
 }
 
