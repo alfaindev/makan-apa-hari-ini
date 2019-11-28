@@ -204,6 +204,7 @@ function showTipeQuestion() {
 }
 
 function getResult() {
+    result = []
     for(var x = 0; x < FoodDB.length;x++){
         if(input.budget == FoodDB[x].info.budget){
             if(input.jenis == FoodDB[x].info.jenis){
@@ -219,7 +220,5 @@ function getResult() {
     } else {
         document.getElementById("question").innerHTML = `Makananmu hari ini adalah: </br>${result}`
     }
-    
-    document.getElementById("option-container").innerHTML = ''
 }
 
