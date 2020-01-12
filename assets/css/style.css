@@ -68,6 +68,17 @@ h1 {
   color: white;
 }
 
+.btn-green {
+  border-color: #00be00;
+  background-color: #00be00;
+  color: white;
+}
+
+.btn-green:hover {
+  border-color: #078a07;
+  background-color: #078a07;
+}
+
 .option-container {
   display: flex;
   flex-direction: row;

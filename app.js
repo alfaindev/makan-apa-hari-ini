@@ -218,7 +218,21 @@ function getResult() {
     if (result.length == 0) {
         document.getElementById("question").innerHTML = 'Sayang sekali kami tidak dapat menemukan makananmu :('
     } else {
-        document.getElementById("question").innerHTML = `Makananmu hari ini adalah: </br>${result}`
+        document.getElementById("question").innerHTML = `Makananmu hari ini adalah: </br>${result}</br>` +
+            `<button class="btn btn-green" id="shareToLine" onclick="shareLine('${result}')" hidden>Share to Line</button>`
     }
+    document.getElementById("option-container").innerHTML = ''
 }
 
+function shareLine(result) {
+    if(!liff.isInClient()){
+        sendAlertIfNotInClient()
+    } else {
+        liff.sendMessages([{
+            'type': 'text',
+            'text': 'Menu makan hari ini ' + result + ' :). Yeee'
+        }]).catch(function(error){
+            alert('Something went wrong!')
+        })
+    }
+}
